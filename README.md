@@ -1,4 +1,5 @@
 # Holberton School - Holberton Shell(hsh)
+
 Low-level programming & Algorithm  Linux and Unix system programming
 Code a simple shell for [Holberton School](https://www.holbertonschool.com/). This task integrates all the topics covered so far and forms the conclusion of the part of the course dedicated exclusively to learning C programming.
 
@@ -37,16 +38,16 @@ Only use this List of allowed functions and system calls :
  -   `wait4` (man 2 wait4)
  -   `write` (man 2 write)
 
-```
+
 
 ### Installing
 
 	Your shell will be compiled this way:
 
-```
+
 	gcc -Wall -Wextra -Werror -pedantic -g *.c -o hsh
 
-```
+
 	-   Where the gcc is the compiler used to compile the program.
 	-   The `-g` and `--debug` flag is for show all the descriptions in debug format.
 	-   The flags `-Wall -Werror -Wextra -pedantic` show all warnings treat as an error.
