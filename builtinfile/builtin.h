@@ -1,8 +1,6 @@
 #ifndef _BUILTIN_H
 #define _BUILTIN_H
 
-#include <limit.h>
-
 #include "../shell.h"
 #include "../shellvar.h"
 

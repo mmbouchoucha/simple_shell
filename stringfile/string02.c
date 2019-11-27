@@ -53,28 +53,28 @@ int _atoi(char *s)
  */
 char *_strcat(char *s1, char *s2, list_t **mt)
 {
-  size_t len1 = 0, len2 = 0, j = 0;
-  char *newstring = NULL;
+  size_t len1 = 0, len2 = 0, i = 0;
+  char *newstr = NULL;
 
   if (s1)
     len1 = _strlen(s1);
   if (s2)
     len2 = _strlen(s2);
 
-  newstring = malloc(sizeof(char) * (len1 + len2 + 1));
-  if (!newstring)
+  newstr = malloc(sizeof(char) * (len1 + len2 + 1));
+  if (!newstr)
     return (NULL);
-  add_node(mt, NULL, newstring);
+  add_node(mt, NULL, newstr);
 
-  reset_buffer(newstring, len1 + len2 + 1);
+  reset_buffer(newstr, len1 + len2 + 1);
 
-  for (j = 0; j < len1; j++)
-    newstring[j] = s1[j];
-  for (; j < len1 + len2; j++)
-    newstring[j] = s2[j - len1];
+  for (i = 0; i < len1; i++)
+    newstr[i] = s1[i];
+  for (; i < len1 + len2; i++)
+    newstr[i] = s2[i - len1];
 
-  newstring[j] = '\0';
-  return (newstring);
+  newstr[i] = '\0';
+  return (newstr);
 }
 
 /**

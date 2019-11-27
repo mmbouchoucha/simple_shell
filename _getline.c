@@ -21,7 +21,7 @@ ssize_t _getline(char **lineptr, size_t *n, int fd, list_t **mt)
   ssize_t buf_size = BUF_SIZE, count = 0;
 
   buff = malloc(buf_size);
-  add_node(mt, NULL, buf);
+  add_node(mt, NULL, buff);
 
   if (!buff)
     return (-1);
@@ -64,7 +64,7 @@ ssize_t _getline(char **lineptr, size_t *n, int fd, list_t **mt)
       char_read = read(fd, buff + count, char_to_read);
       if (char_read == -1)
 	return (-1);
-      char_read = _strlen(buf) - count;
+      char_read = _strlen(buff) - count;
       count += char_read;
       if (buff[count - 1] == '\n')
 	break;
