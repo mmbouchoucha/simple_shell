@@ -27,7 +27,7 @@ int write_log(sev_t *sev)
   list_t *walker = NULL;
   int fds = 0, len = 0;
 
-  fullpath = _strcat(_getenv("HOME", sev), "/", &sev->mem);
+  fullpath = _strcat(_getenvironment("HOME", sev), "/", &sev->mem);
   fullpath = _strcat(fullpath, LOGFILE, &sev->mem);
   fds = open(fullpath, O_WRONLY | O_CREAT | O_TRUNC, 0600);
   if (fds == -1)
@@ -64,7 +64,7 @@ int get_log_count(sev_t *sev)
   size_t size = MAXBUFREAD, lines = 0;
   ssize_t numread = 1, index = 0;
 
-  fullpath = _strcat(_getenv("HOME", sev), "/", &sev->mem);
+  fullpath = _strcat(_getenvironment("HOME", sev), "/", &sev->mem);
   fullpath = _strcat(fullpath, LOGFILE, &sev->mem);
 
   fds = open(fullpath, O_RDONLY);

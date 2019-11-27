@@ -69,8 +69,8 @@ char *getcom(sev_t *sev)
   else
     sev->input = NULL;
   add_log(sev);
-  sev->p_input = make_arr_str(sev->input, DELIM, sev);
-  var_expansion(sev);
+  sev->p_input = make_array_str(sev->input, DELIM, sev);
+  var_expan(sev);
   return (sev->input);
 }
 
@@ -132,7 +132,7 @@ int actions(sev_t *sev)
   int stat;
 
   if (_strlen(sev->input))
-    fullpath = pathfinder(sev);
+    fullpath = pathfind(sev);
   if (sev->error)
     return (0);
   if (fullpath)
