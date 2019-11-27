@@ -115,5 +115,5 @@ Only use this List of allowed functions and system calls :
 
 ## Authors
 
-	-   **Lafine Sami** [LinkedIn](https://www.linkedin.com/in/sami-lafine-374b2320) || [Twitter](https://twitter.com/AfineSami)
-	-  **Mohamed Mehdi Bouchoucha** [LinkedIn](https://www.linkedin.com) || [Twitter](https://twitter.com/MMBouchoucha)
+-   **Lafine Sami** [LinkedIn](https://www.linkedin.com/in/sami-lafine-374b2320/) || [Twitter](https://twitter.com/AfineSami)
+-  **Mohamed Mehdi Bouchoucha**i[LinkedIn](https://www.linkedin.com) || [Twitter](https://twitter.com/MMBouchoucha)
