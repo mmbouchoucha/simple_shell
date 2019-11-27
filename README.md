@@ -38,7 +38,7 @@ Only use this List of allowed functions and system calls :
  -   `wait4` (man 2 wait4)
  -   `write` (man 2 write)
 
-
+----------------
 
 ### Installing
 
@@ -62,7 +62,7 @@ Only use this List of allowed functions and system calls :
 	-   After the compilation process use the excecutable command: `./hsh` and click on enter "`\n`".
 	-   If you want to verify the free() process in the shell I recommend to use valgrind and the executable
 
-	------
+----------
 
 ## Description of File Structure
 	In the present shell is posible to use common commands like:
@@ -75,7 +75,7 @@ Only use this List of allowed functions and system calls :
 	| **`echo`** | Print the next argument after write the echo command |
 	| **`exit`** | Close the shell in a correct end process |
 
-
+-----------------
 ## TODO
 
 ### Mandatory
@@ -111,9 +111,9 @@ Only use this List of allowed functions and system calls :
 	-   history
 	-   Deal with variables
 	-   File as input
-
+------------------
 
 ## Authors
 
-	-   **Lafine Sami** [LinkedIn](https://www.linkedin.com/in/sami-lafine-374b2320/) || [Twitter](https://twitter.com/AfineSami)
+	-   **Lafine Sami** [LinkedIn](https://www.linkedin.com/in/sami-lafine-374b2320) || [Twitter](https://twitter.com/AfineSami)
 	-  **Mohamed Mehdi Bouchoucha** [LinkedIn](https://www.linkedin.com) || [Twitter](https://twitter.com/MMBouchoucha)
