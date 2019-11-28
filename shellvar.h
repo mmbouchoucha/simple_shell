@@ -1,8 +1,6 @@
 #ifndef _SHELLVAR_H_
 #define _SHELLVAR_H_
-
 #include "shell.h"
-
 /**
  * struct sev_s - shell env vars
  * @skywalker: flag to continue or not continue with shell
@@ -28,24 +26,24 @@
  */
 typedef struct sev_s
 {
-  int skywalker;
-  int ia_mode;
-  list_t *log;
-  int log_cnt;
-  int cmd_cnt;
-  list_t *mem;
-  list_t *env;
-  char **evp;
-  char *input;
-  char **p_input;
-  int error;
-  char *errmsg;
-  int olderror;
-  pid_t pid;
-  list_t *alias;
-  list_t *cmd_q;
-  char *shell_d;
-  char *arg0;
-} sev_t;
+	int skywalker;
+	int ia_mode;
+	list_t *log;
+	int log_cnt;
+	int cmd_cnt;
+	list_t *mem;
+	list_t *env;
+	char **evp;
+	char *input;
+	char **p_input;
+	int error;
+	char *errmsg;
+	int olderror;
+	pid_t pid;
+	list_t *alias;
+	list_t *cmd_q;
+	char *shell_d;
+	char *arg0;
 
+	sev_t;
 #endif /* _SHELLVAR_H_ */
