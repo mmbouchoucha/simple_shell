@@ -46,7 +46,7 @@ void exit_sh(sev_t *sev)
     {
       sigint = 2;
       sev->error = sigint;
-      sev->errmsg = illegalnum(sev);
+      sev->errmsg = illnum(sev);
       sev->skywalker = 1;
     }
 }
@@ -65,7 +65,7 @@ void _printenv(sev_t *sev)
 
   if (sev->p_input[1] != NULL)
     {
-      sev->errmsg = invalidenv(sev);
+      sev->errmsg = invalenv(sev);
       sev->error = 127;
       reverse_list(&(sev->env));
       return;
